@@ -1,0 +1,8 @@
+{
+  "name": "Remix: Hanwha Vision Dashboard",
+  "description": "한화비젼 글로벌 마케팅 통합 퍼포먼스 대시보드 (Hanwha Vision Global Marketing Integrated Dashboard)",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

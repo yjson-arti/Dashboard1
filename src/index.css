@@ -1,0 +1,39 @@
+@import "tailwindcss";
+
+/* Grayscale and brightness adjustments for map tiles to create a sleek slate theme */
+.leaflet-container {
+  background: #f8fafc !important;
+  font-family: "Inter", sans-serif;
+}
+.leaflet-tile-pane {
+  filter: grayscale(100%) brightness(1.02) contrast(0.96) opacity(0.9);
+}
+
+/* Elegant Leaflet custom tooltips matching slate color schemes */
+.leaflet-tooltip.custom-map-tooltip {
+  background: rgba(15, 23, 42, 0.97) !important;
+  border: 1px solid rgba(71, 85, 105, 0.6) !important;
+  color: #f1f5f9 !important;
+  border-radius: 2px !important;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06) !important;
+  padding: 10px !important;
+  font-family: monospace !important;
+}
+.leaflet-tooltip-top.custom-map-tooltip:before {
+  border-top-color: rgba(15, 23, 42, 0.97) !important;
+}
+
+/* Hide leaflet default zoom control borders for minimalist UI */
+.leaflet-bar {
+  border: none !important;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px -1px rgba(0, 0, 0, 0.1) !important;
+}
+.leaflet-bar a {
+  border-bottom: 1px solid #e2e8f0 !important;
+  background-color: #ffffff !important;
+  color: #475569 !important;
+}
+.leaflet-bar a:hover {
+  background-color: #f8fafc !important;
+  color: #0f172a !important;
+}
